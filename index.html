@@ -1,36 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Sample Deployment</title>
-  <style>
-    body {
-      color: #ffffff;
-      background-color: #0188cc;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-    }
-    
-    h1 {
-      font-size: 500%;
-      font-weight: normal;
-      margin-bottom: 0;
-    }
-    
-    h2 {
-      font-size: 200%;
-      font-weight: normal;
-      margin-bottom: 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Stylish HTML Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            animation: bounceIn 0.6s ease forwards;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #2980b9;
+            margin: 10px 0;
+            border-bottom: 3px solid #2980b9;
+            padding-bottom: 5px;
+            transition: color 0.3s, transform 0.3s;
+            animation: fadeIn 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        h2:hover {
+            color: #3498db;
+            transform: scale(1.05);
+        }
+
+        h3 {
+            font-size: 2em;
+            color: #27ae60;
+            margin: 8px 0;
+            letter-spacing: 1px;
+            animation: slideIn 1s ease forwards;
+            opacity: 0;
+        }
+
+        h5 {
+            font-size: 1.5em;
+            color: #8e44ad;
+            margin-top: 5px;
+            animation: fadeIn 1s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 2em;
+            }
+            h3 {
+                font-size: 1.5em;
+            }
+            h5 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div align="center">
-    <h1>Congratulations To Everyone to pipeline demo 1</h1>
-    <h2>Deployment is triggered by code change -No 2. CodePipeline can orchestrate the CI/CD process. </h2>
-    <br>
-    <p>For next steps, read the <a href="http://aws.amazon.com/documentation/codedeploy">AWS CodeDeploy Documentation</a>.</p>
-  </div>
+    <h1>CI/CD</h1>
+    <h2>CodePipeline Orchestrated CI/CD Process</h2>
+    <h3>Mythily Raman</h3>
+    <h5>DevOps Engineer</h5>
 </body>
 </html>
-
